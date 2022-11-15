@@ -1,0 +1,34 @@
+@startuml
+
+class teatro
+teatro : movies: dict
+teatro : comprar_tickets ()
+teatro : show_cupos ()
+
+teatro o-- movies 
+
+movies : name: str 
+movies : time: float
+
+class Tickets 
+Tickets : position: int 
+Tickets : time: float 
+Tickets : movie: str
+
+vip <-- Tickets
+regular <-- Tickets
+
+regular : position: int
+regular : time: float 
+regular : movie: str
+
+vip : position: int
+vip : time: float 
+vip : movie: str
+
+class User
+User : usuario : dict 
+User : name : str
+User : Comprobar_user()
+
+@enduml

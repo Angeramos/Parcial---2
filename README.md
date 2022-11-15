@@ -9,5 +9,6 @@
 
 # *Explicación UML*x
 
-    
+    Cree una clase teatro, que sería la principal que recibe el diccionario con los nombres de las peliculas, la clase movies la cual se compone de la clase Tickets donde se recibe el nombre y el tiempo de la pelicula. 
+    Luego una clase abstracta Tickets, de la cual heredan VIP y regular, en cada ticket se guarda como atributo la posicion, la hora, y el nombre de la pelicula. Por ultimo la clase usuario qu erecibe un diccionario donde se relaciona el nombre de la persona y su posicion favorita.
 
